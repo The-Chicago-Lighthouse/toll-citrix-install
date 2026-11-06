@@ -57,13 +57,21 @@ Copy the whole block below. On GitHub, you can use the copy button in its top-ri
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 $ProgressPreference = 'SilentlyContinue'
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Set-Location C:\
 New-Item -ItemType Directory -Force -Path tolltemp | Out-Null
 Set-Location tolltemp
 Invoke-WebRequest -Uri "https://github.com/The-Chicago-Lighthouse/toll-citrix-install/archive/refs/heads/main.zip" -OutFile "main.zip"
 Expand-Archive -Path "main.zip" -DestinationPath . -Force
 Set-Location "toll-citrix-install-main"
-Start-BitsTransfer -Source "https://github.com/The-Chicago-Lighthouse/toll-citrix-install/raw/refs/heads/main/CitrixWorkspaceApp.exe?download=CitrixWorkspaceApp.exe" -Destination "CitrixWorkspaceAppCLH.exe"
+
+# Use the exe from the zip; only download it if the zip held a Git LFS pointer instead
+Copy-Item ".\CitrixWorkspaceApp.exe" ".\CitrixWorkspaceAppCLH.exe" -Force -ErrorAction SilentlyContinue
+if (-not (Test-Path ".\CitrixWorkspaceAppCLH.exe") -or (Get-Item ".\CitrixWorkspaceAppCLH.exe").Length -lt 1MB) {
+    Invoke-WebRequest -Uri "https://github.com/The-Chicago-Lighthouse/toll-citrix-install/raw/refs/heads/main/CitrixWorkspaceApp.exe" -OutFile "CitrixWorkspaceAppCLH.exe"
+}
+if ((Get-Item ".\CitrixWorkspaceAppCLH.exe" -ErrorAction SilentlyContinue).Length -lt 1MB) { throw "Citrix installer missing or incomplete - aborting." }
+
 .\Citrix_Uninstaller.ps1
 Start-Process ".\main.bat"
 
