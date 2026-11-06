@@ -16,7 +16,7 @@ Set-Location tolltemp
 Invoke-WebRequest -Uri "https://github.com/The-Chicago-Lighthouse/toll-citrix-install/archive/refs/heads/main.zip" -OutFile "main.zip"
 Expand-Archive -Path "main.zip" -DestinationPath .
 Set-Location "toll-citrix-install-main"
-Invoke-WebRequest -Uri "https://github.com/The-Chicago-Lighthouse/toll-citrix-install/raw/refs/heads/main/CitrixWorkspaceApp.exe?download=CitrixWorkspaceApp.exe" -OutFile "CitrixWorkspaceAppCLH.exe"
+Start-BitsTransfer -Source "https://github.com/The-Chicago-Lighthouse/toll-citrix-install/raw/refs/heads/main/CitrixWorkspaceApp.exe?download=CitrixWorkspaceApp.exe" -Destination "CitrixWorkspaceAppCLH.exe"
 .\Citrix_Uninstaller.ps1
 Start-Process ".\main.bat"
 
