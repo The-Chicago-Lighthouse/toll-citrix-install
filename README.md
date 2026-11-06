@@ -5,7 +5,7 @@
 Step-1-Start-Button:
  <br><img src="/screenshots/Step-1-Start-Button.png" style="width: 25%;"><br>
 
-Step-1-Start-Button:
+Step-2-Start-Menu-Search:
  <br><img src="/screenshots/Step-2-Start-Menu-Search.png" style="width: 25%;"><br>
 
 Step-3-Run-PS-As-Admin
