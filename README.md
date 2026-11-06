@@ -3,19 +3,19 @@
  
 
 Step-1-Start-Button:
- <br><img src="/screenshots/Step-1-Start-Button.png" style="width: 25%;"><br>
+ <br><br><img src="/screenshots/Step-1-Start-Button.png" style="width: 25%;"><br>
 
 Step-2-Start-Menu-Search:
- <br><img src="/screenshots/Step-2-Start-Menu-Search.png" style="width: 25%;"><br>
+ <br><br><img src="/screenshots/Step-2-Start-Menu-Search.png" style="width: 25%;"><br>
 
 Step-3-Run-PS-As-Admin
- <br><img src="/screenshots/Step-3-Run-PS-As-Admin.jpg" style="width: 25%;"><br>
+ <br><br><img src="/screenshots/Step-3-Run-PS-As-Admin.jpg" style="width: 25%;"><br>
 
 Step-4-Run-PS-As-Admin-Prompt:
- <br><img src="/screenshots/Step-4-Run-PS-As-Admin-Prompt.jpg" style="width: 25%;"><br>
+ <br><br><img src="/screenshots/Step-4-Run-PS-As-Admin-Prompt.jpg" style="width: 25%;"><br>
 
 Step-5-Paste-Commands:
- <br><img src="screenshots/Step-5-Paste-Commands.jpg" style="width: 25%;"><br>
+ <br><br><img src="screenshots/Step-5-Paste-Commands.jpg" style="width: 25%;"><br>
 
 Run the following in elavated mode [run as administrator] in PowerShell:
 ```
