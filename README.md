@@ -1,11 +1,21 @@
 # toll-citrix-install
  Used to configure tollway remote employee laptops/computers
  
-![Step-1-Start-Button](/screenshots/Step-1-Start-Button.png)
-![Step-2-Start-Menu-Search](/screenshots/Step-2-Start-Menu-Search.png)
-![Step-3-Run-PS-As-Admin](/screenshots/Step-3-Run-PS-As-Admin.jpg)
-![Step-4-Run-PS-As-Admin-Prompt](/screenshots/Step-4-Run-PS-As-Admin-Prompt.jpg)
-![Step-5-Paste-Commands](/screenshots/Step-5-Paste-Commands.jpg)
+
+Step-1-Start-Button:
+ <img src="/screenshots/Step-1-Start-Button.png" style="width: 70%;">
+
+Step-1-Start-Button:
+ <img src="/screenshots/Step-2-Start-Menu-Search.png" style="width: 70%;">
+
+Step-3-Run-PS-As-Admin
+ <img src="/screenshots/Step-3-Run-PS-As-Admin.jpg" style="width: 70%;">
+
+Step-4-Run-PS-As-Admin-Prompt:
+ <img src="/screenshots/Step-4-Run-PS-As-Admin-Prompt.jpg" style="width: 70%;">
+
+Step-5-Paste-Commands:
+ <img src="screenshots/Step-5-Paste-Commands.jpg" style="width: 70%;">
 
 Run the following in elavated mode [run as administrator] in PowerShell:
 ```
@@ -26,3 +36,4 @@ Start-Process ".\main.bat"
  Network Security Engineer
  The Chicago Lighthouse
  Email: Esmeil.Naqeeb@chicagolighthouse.org
+ 
