@@ -121,6 +121,6 @@ Remove-Item -Recurse -Force C:\tolltemp
 
 ## Contact
 
-Esmeil Naqeeb  
-Network Security Engineer, The Chicago Lighthouse  
-Email: [Esmeil.Naqeeb@chicagolighthouse.org](mailto:Esmeil.Naqeeb@chicagolighthouse.org)
+Helpdesk  
+IT Department | The Chicago Lighthouse  
+Email: [helpdesk@chicagolighthouse.org](mailto:helpdesk@chicagolighthouse.org)
